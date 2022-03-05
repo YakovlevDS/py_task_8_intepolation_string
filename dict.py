@@ -23,10 +23,20 @@ users={
 #     print(value)
 
 # We change the keys and values
-new={}
-for key, value in price.items():
-    new[value]=key
-print(new)
+# new={}
+# for key, value in price.items():
+#     new[value]=key
+# print(new)
+
+# x=price.values()
+# print(type(x))
+# print(list(x))
+
+# Pull the values
+for value in price.values():
+    print(value)
+
+
 
 
 
