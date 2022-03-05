@@ -1,49 +1,29 @@
-import os
-# list_paths=[]
+import time
 
-# for adress, folder, file in os.walk('C:\\Users\Zver\Desktop'):
-#     for i in file:
-#         full_path = os.path.join(adress, i)
-#         list_paths.append(full_path)
+def f(*args):
+    list_new=[]
+    for i in args:
+        for y in i:
+            if y not in list_new:
+                list_new.append(y)
+        return list_new
 
-# Creates if it is not and writes to file text
-# r=open('text.txt','w')
-# r.write('string text')
-# r.close
+z=list(range(10000))
+x=list(range(5000,15000))
+c=list(range(10000,20000))
 
-# Reading file.
-# r=open('text.txt')
-# u = r.read()
-# print(u)
-# r.close
+start=time.time()
+f(z,x,c)
+stop=time.time()-start
+print(stop)
 
-# r = open('text.txt','w')
-# for x in list_paths:
-#     r.write(x + '\n')
-# r.close 
-#
-#     
-# r = open('text.txt')
-# for i in r:
-#     if 'text' in i:
-#         print(i)
-# r.close    
+start2=time.time()
+r=set(z)
+t=r.union(set(x),set(c))
+stop2=time.time()-start2
+print(stop2)
+n=stop/stop2
+print('работа с множеством (set) в ',n,'раз быстрее')
 
-# r= open('e.exe','rb')
-# y= open('Копия e.exe','wb')
-# while True:
-#     var = r.read(1048576) #1024*1024 bate read по 1 kB
-#     print(var.__sizeof__()) # Show file size
-#     if var.__sizeof__() == 33: 
-#         break
-#     y.write(var)   
 
-# print('Контрол')
-# r.close
-# y.close
-
-# Record to a file with encoding
-r=open('text2.txt', 'w', encoding='utf-8')
-r.write('string of text')
-r.close()
 
