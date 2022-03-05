@@ -13,3 +13,11 @@ s='string text'
 print(s.upper())
 print(s.lower())
 print(s.capitalize())
+
+
+pathLin = 'C:/User/Py/Desktop/str.py'
+pathWin = pathLin.replace('/','\\') 
+print(pathWin)
+
+r=pathWin.split('\\')
+print(r[-1]) # получение имени файла
