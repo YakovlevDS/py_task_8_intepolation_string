@@ -9,14 +9,16 @@ users={
     'Juice':{'password':2222,'id':3},
 }
 
-sale_price={}
-for i in price:
-    sale_price[i]=round(price[i]*0.85, 2)
+# sale_price={}
+# for i in price:
+#     sale_price[i]=round(price[i]*0.85, 2)
 
 
-print(price)
-print(sale_price)
-
+# print(price)
+# print(sale_price)
+for key, value in price.items():
+    print(key)
+    print(value)
 
 
 
