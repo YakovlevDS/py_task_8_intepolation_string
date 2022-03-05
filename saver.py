@@ -7,10 +7,15 @@
 #         list_paths.append(full_path)
 
 # Creates if it is not and writes to file text
-r=open('text.txt','w')
-r.write('string text')
-r.close
+# r=open('text.txt','w')
+# r.write('string text')
+# r.close
 
+# Reading file.
+# r=open('text.txt')
+# u = r.read()
+# print(u)
+# r.close
 
 
 
