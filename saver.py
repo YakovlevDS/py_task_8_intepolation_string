@@ -29,17 +29,21 @@ import os
 #         print(i)
 # r.close    
 
-r= open('e.exe','rb')
-y= open('Копия e.exe','wb')
-while True:
-    var = r.read(1048576) #1024*1024 bate read по 1 kB
-    print(var.__sizeof__()) # Show file size
-    if var.__sizeof__() == 33: 
-        break
-    y.write(var)   
+# r= open('e.exe','rb')
+# y= open('Копия e.exe','wb')
+# while True:
+#     var = r.read(1048576) #1024*1024 bate read по 1 kB
+#     print(var.__sizeof__()) # Show file size
+#     if var.__sizeof__() == 33: 
+#         break
+#     y.write(var)   
 
-print('Контрол')
-r.close
-y.close
+# print('Контрол')
+# r.close
+# y.close
 
+# Record to a file with encoding
+r=open('text2.txt', 'w', encoding='utf-8')
+r.write('string of text')
+r.close()
 
