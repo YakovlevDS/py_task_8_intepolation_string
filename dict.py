@@ -16,9 +16,18 @@ users={
 
 # print(price)
 # print(sale_price)
+
+
+# for key, value in price.items():
+#     print(key)
+#     print(value)
+
+# We change the keys and values
+new={}
 for key, value in price.items():
-    print(key)
-    print(value)
+    new[value]=key
+print(new)
+
 
 
 
